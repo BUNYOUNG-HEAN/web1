@@ -2,14 +2,14 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: color #ccc0c0;
-    background-color: #d8cece;
 }
 header{
     background-color: rgba(0, 0, 0, 0.842);
-    text-align: center;
     color: #fff;
-    padding: 5px 0px;
+    padding: 10px 0;
+    position: fixed
+    width: 100%;
+    
 }
 footer{
     background-color: rgba(0, 0, 0, 0.842);
@@ -23,30 +23,35 @@ footer{
 }
 main{
     flex: 3;
-    background: #f5e6e6;
+    background: #fcfcfc;
     margin: 10px;
     margin-right: 0;
     margin-left: 0;
     padding: 10px;
+    border-radius: 20px;
 }
 aside{
     flex: 1;
-    background: palevioletred;
+    background: #f8f6f6f5;
     margin: 10px;
     margin-right: 0;
+    border-radius: 20px;
+    padding: 20px;
 }
 .card-container{
     display: flex;
     justify-content: space-around;
 }
 .card{
-    width: 30%;
-    margin: 5px;
-    padding: 15px;
-    box-shadow: 0 1px 1px 1px  rgba(185, 185, 184, 0.253);
+    padding: 10px;
+    width: 28%;
+    box-shadow: 0 1px 1px 1px  rgba(117, 117, 113, 0.253);
     text-align: center;
     border-radius: 20px;
     background-color: #fff;
+    transition: 0.3s;
+    transform: scale(0.3s);
+    
 
 }
 .card img{
@@ -54,9 +59,10 @@ aside{
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    padding: 10px;
 }
 .card button{
-    padding: 10px;
+    padding: 13px;
     border-radius: 20px;
     border: none;
     background-color: #03344c;
@@ -64,20 +70,22 @@ aside{
     width: 10;
 }
 body{
-    background-color: #e2d6d6;
+    background: #f4f4f4;
 }
 #card-container{
     display: flex;
     justify-content: space-around;
 }
 #card{
-    width: 250px;
-    margin: 10px;
+    width:260px;
+    margin: 15px;
     padding: 10px;
     box-shadow: 0 1px 1px 1px  rgba(185, 185, 184, 0.253);
     text-align: center;
     border-radius: 15px;
     background-color: #fff;
+    transition: 0.3s;
+    
 }
 #card img{
     width: 250px;
@@ -85,3 +93,47 @@ body{
     border-radius: 10px;
     object-fit: cover;
 }
+/* #card :hover{
+    transform: scale(1.04); */
+/* } */
+#card-container :hover{
+    transform: scale(1.06);
+    transition: 0.3s;
+}
+.card-container :hover{
+    transform: translateY(-15px);
+    /* transform: scale(1.06); */
+    transition: 0.3s;
+}
+.A{
+    color: #03374E;
+    text-decoration: none;
+    text-decoration: underline;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    display: flex;
+    list-style: none;
+    /* gap: 10px; */
+    
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.nav-link a:hover{
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* .card :hover{
+    transform: translateY(-10px);
+    transition: 0.1s;
+} */
